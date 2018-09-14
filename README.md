@@ -4,8 +4,9 @@ Basic social media prototype application, featuring basic functionality APIs of 
 
 ## Features
 - Sign up and login a user with basic info like `email`, `username` and `password`.
-- Email verification for deliverability from [Hunter](https://hunter.io/)
-- Extra user information from [Clearbit/Enrichment](https://clearbit.com/enrichment)
+- Email verification for deliverability from [Hunter](https://hunter.io/).
+- Password length validation.
+- Extra user information from [Clearbit/Enrichment](https://clearbit.com/enrichment).
 - Authenticate user and acquire token using [JWT](https://jwt.io/).
 - Make API calls, with header `Authorization Bearer token`.
 - Write post and like/unlike the post.
@@ -55,7 +56,7 @@ Basic social media prototype application, featuring basic functionality APIs of 
 
 
 ## Project's Django Apps:
-- : `api` holding all the logics and interacting with DB
+- : `api` holding logic and interaction with DB
 
 
 ## Third party packages:
