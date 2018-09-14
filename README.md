@@ -1,6 +1,6 @@
 # Tradecore
 
-Basic social media prototype application, featuring basic functionality APIs of sign-up, login, logout, creating posts and liking/disliking them. Project built using [Django framework](https://github.com/django/django) on python.
+Basic social media prototype application, featuring basic functionality APIs of sign-up, login, logout, creating posts and liking/disliking them. Project built using [Django framework](https://github.com/django/django) on Python 3.6.
 
 ## Features
 - Sign up and login a user with basic info like `email`, `username` and `password`.
@@ -15,14 +15,20 @@ Basic social media prototype application, featuring basic functionality APIs of 
 - [API Overview](api-overview.md)
 
 ## Setup (To run locally)
- - Create a Python 3.6 virtualenv
+- Clone this git repository and cd into it:
+        
+        git clone https://github.com/ahirnish/Tradecore_Assignment.git
+        cd Tradecore_Assignment/
+
+
+- Create a Python 3.6 virtualenv:
         
         virtualenv --python=python3 venv
 
 
 - activate python virtual environment:
   
-        cd venv && source bin/activate
+        source venv/bin/activate
 
 
 - Install dependencies:
@@ -34,7 +40,6 @@ Basic social media prototype application, featuring basic functionality APIs of 
     move to sub-directory `tradecore/`, then run migrations to create database. Using only `sqlite3` DB for development.
     
         cd tradecore/
-        python manage.py makemigrations
         python manage.py migrate
 
 
@@ -57,7 +62,7 @@ Basic social media prototype application, featuring basic functionality APIs of 
 - [django-rest-framework](https://github.com/encode/django-rest-framework)
 - [django-rest-framework-jwt](https://github.com/GetBlimp/django-rest-framework-jwt)
 - [requests](https://github.com/requests/requests)
-- [Pyhunter](https://github.com/VonStruddle/PyHunter)
+- [pyhunter](https://github.com/VonStruddle/PyHunter)
 - [clearbit](https://github.com/clearbit/clearbit-python)
 
 ## Usage Directions:
@@ -66,7 +71,7 @@ Basic social media prototype application, featuring basic functionality APIs of 
 - Start django server
 - Run the bot
 
-        python venv/tradecore/bot.py data.txt
+        python Tradecore_Assignment/tradecore/bot.py data.txt
 
 - Use any rest client with Authorization header, to test APIs. [API Overview](api-overview.md)
 
