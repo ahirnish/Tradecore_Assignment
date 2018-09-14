@@ -203,8 +203,6 @@ class UserDetailView(generics.RetrieveUpdateDestroyAPIView):
             if timezone:
                 user_obj.profile.timezone = timezone
             if utc_offset:
-                if not isinstance(utc_offset,int):
-                    return Response(data={"message": "utc_offset can only accept integer values"}, status=status.HTTP_400_BAD_REQUEST)
                 user_obj.profile.utc_offset = utc_offset
             if company_name:
                 user_obj.profile.company_name = company_name
